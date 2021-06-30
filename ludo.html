@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>This is Ludo apk</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+
+         <div id="main_container">
+             <h1>Js Ludo!</h1>
+        <div id="main2_contain">
+             <div id="first_contain">
+                 <h2>Player 1</h2>
+                 <img src="ludo1.JPG " id="check1">   
+
+             </div>
+             <div id="second_contain">
+                <h2>Player 2</h2>
+                <img src="ludo1.JPG " id="check2">   
+
+             </div>
+      </div>
+      <button onClick="Ludogame()">Click me</button>
+         </div>
+
+         <script type="text/javascript">
+        Ludogame = () => {
+                 const player1=Math.floor(Math.random() *6) +1;
+                 const play1dice= `ludo${player1}.jpg`;
+                 document.getElementById('check1').setAttribute('src',play1dice);
+                        
+
+
+                 const player2=Math.floor(Math.random() *6) +1;
+                 const play2dice= `ludo${player2}.jpg`;
+                 document.getElementById('check2').setAttribute('src',play2dice);
+
+             
+                 
+
+                 if(player1 > player2)
+                 {
+                     document.querySelector('h1').innerHTML="Player1 Won !";
+                 }
+                 else if(player2 > player1)
+                 {
+                    document.querySelector('h1').innerHTML="Player2 Won !";
+                 }
+                 else{
+                    document.querySelector('h1').innerHTML="DIE !";
+                 }
+        }
+         </script>
+
+</body>
+</html>

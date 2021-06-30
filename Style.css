@@ -1,0 +1,59 @@
+body{
+        width:100%;
+        height:100%;
+        background-color: rgb(226, 55, 84);
+}
+
+#main_container{
+
+        width:auto;
+        height: auto;
+        background-color: pink; 
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+        
+
+
+}
+#first_contain{
+                    width: 400px;
+                    
+                    background-color: white;
+                    
+                    display: flex;
+                    flex-direction: column;
+                     align-items: center;
+                     padding: 20px;
+    
+}
+#second_contain{
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     padding: 20px;
+}
+
+#main2_contain{
+                   display: flex;
+                
+                   align-items:center ;
+                   flex-direction: row;
+}
+Button{
+        margin: 15px;
+        background-color: red;
+        height: 35px;
+
+}
+h1{
+    font-family: serif;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px red;
+}
+h2{
+    text-shadow: 2px 2px royalblue;
+}
